@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Caveat:wght@400..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+        <title>Development Handin</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div id="header">
+            <h1>Development</h1>
+            <h2>Joe Maffa</h2>
+        </div>
+        <hr class="section-divider">
+        <!-- Intro to project -->
+        <div id="background" class="section">
+            <h1 class="section-header">Background</h1>
+            <p>
+                To learn the fundamentals of programming with React, I created a list aggregation system. 
+                After running a competitive analysis on a few websites that offer similar services, I aimed to prioritize X Y and Z in my interface.
+                I then developed an interface that could be used to appoint people to songs in my drumming group, Gendo Taiko. I then deployed the React application using Vercel.
+            </p>
+            <div id="overview">
+                 <!-- OVERVIEW OF PROJECT -->
+                <div class="project-step">
+                    <p>Competitive Analysis</p>
+                </div>
+                <div class="arrow-down"></div>
+                <div class="project-step">
+                    <p>Develop</p>
+                </div>
+                <div class="arrow-down"></div>
+                <div class="project-step">
+                    <p>Deploy</p>
+                </div>
+            </div>
+        </div>
+        <hr class="section-divider">
+        <!-- Competitive Analysis -->
+        <div id="competitive-analysis" class="section">
+            <h1 class="section-header">Competitive Analysis</h1>
+            <p>
+                I began by conducting a competitive analysis on other list aggregation tools in order to compare useful features. 
+                Specifically I compared list aggregators in different domains: playlist making (spotify.com), team building (craftednba.com), and clothing shopping (abercrombie.com).
+                The team building website is the most similar to my project, but I wanted to see what features I could borrow from the other two domains as well.
+            </p>
+            <table id="competitive-analysis-table">
+                <tr>
+                    <th>Features</th>
+                    <th>Spotify</th>
+                    <th>CraftedNBA</th>
+                    <th>Abercrombie</th>
+                </tr>
+                <tr>
+                    <td>Favorite</td>
+                    <td>Y</td>
+                    <td>Y</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>Filter</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>Sort</td>
+                    <td>Y</td>
+                    <td>N</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>Search</td>
+                    <td>Y</td>
+                    <td>Y</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>Suggested Additions</td>
+                    <td>Y</td>
+                    <td>N</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Visible List on Page</td>
+                    <td>N</td>
+                    <td>Y</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Multiple card views</td>
+                    <td>Y</td>
+                    <td>N</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Visible Add to List</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>Y</td>
+                </tr>
+                <tr>
+                    <td>Multiple Removal Routes</td>
+                    <td>Y</td>
+                    <td>N</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Informative Card</td>
+                    <td>Y</td>
+                    <td>N</td>
+                    <td>Y</td>
+                </tr>
+            </table>
+            <p>
+                TODO: add features from class?
+                In my competitive analysis, I compared features that expedite and simplify the user experience. For example, I found that sites like CraftedNBA with a lot of cards on one page and no sort or
+                filter features was extremely overwhelming. However, it benefitted by having a visible list on the page, allowing me to track what I was adding to my "favorites" list as I used the app without needing
+                me to navigate to another page like with Spotify's Liked Songs or Abercrombie's Favorited feature. However, I found that Spotify and Abercrombie benefitted from having informative cards with information
+                that may be used to sort/filter the cards and help the user make a decision on what to add to the table. Finally, I think that having a clearly visible add to list button made
+                a big difference in expediting the user experience and reducing the scanning a user has to do to get the desired goal of adding the item to the list.
+            </p>
+
+            <p>
+                From this competitive analysis, I chose to prioritize having informative cards, clear add and removal buttons, and a clearly visible list in my interface along with the required features of sorting and filtering based on information
+                that is visible in the cards.
+            </p>
+            
+           <!-- TODO: add photos of comparative analysis -->
+            <hr class="list-divider">
+            <div class="photo">
+                <img src="images/interfaceA.png" alt="original interface A"/>
+                <h2>Original Interface</h2>   
+            </div>
+            
+            <hr class="list-divider">
+            <div class="photo">
+                <img src="images/interfaceB.png" alt="redesigned interface B"/>
+                <h2>Redesigned Interface</h2>
+            </div>
+        </div>
+        <hr class="section-divider" class="section">
+        <!-- Development -->
+        <div id="development" class="section">
+            <h1 class="section-header">Development</h1>
+            <a target="_blank" href="https://development-gendo-aggregator.vercel.app/"><button class="website-button" href>View my deployed site!</button></a>
+            <p>
+                For my list aggregation system, I developed a website that can be used to allocate people to songs. In my drumming ensemble, Gendo Taiko,
+                we often struggle to determine who can be put in what song for each performance. This system allows users to filter members based on their
+                time in the club (gen), and the songs that they know. When the user picks a song, they will be left with only the members who can play that song.
+                The user can then add and remove members from that song. If they'd like to sort all the possible members based on graduation year, gen, or name, they also
+                have the option to do that.
+            </p>
+            <p>Here are few photos of my webapp in action!</p>
+            <!-- TODO: add photos -->
+            <img>
+            <img>
+
+        </div>
+        <hr class="section-divider" class="section">
+        <div id="deployment" class="section">
+            <h1 class="section-header">Deployment</h1>
+            <p>After developing my React application, I used Vercel to deploy it publicly.</p>
+        </div>
+        <hr class="section-divider" class="section">
+        <!-- Conclude -->
+        <div id="conclusion" class="section">
+            <h1 class="section-header">Conclusion</h1>
+            <p>
+                Overall this was a great project to learn some of the fundamentals of state management in React. I was able to conduct research of similar systems and pick
+                the best features to implement in my own project. In creating my application, I learned how to design using a component system and manage passing props up
+                and down the component tree. Finally, I also gained experience deploying a React application using Vercel.
+            </p>
+        </div>
+    </body>
+</html>
