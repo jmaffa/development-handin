@@ -42,7 +42,7 @@
             <h1 class="section-header">Competitive Analysis</h1>
             <p>
                 I began by conducting a competitive analysis on other list aggregation tools in order to compare useful features. 
-                Specifically I compared list aggregators in different domains: playlist making (spotify.com), team building (craftednba.com), and clothing shopping (abercrombie.com).
+                Specifically I compared list aggregators in different domains: playlist making (<a target="_blank" href="https://open.spotify.com/playlist/37i9dQZF1EpjMpCkbnBTgn">Spotify</a>), team building (<a target="_blank" href="craftednba.com">CraftedNBA</a>), and clothing shopping (<a target="_blank" href="abercrombie.com">Abercrombie</a>).
                 The team building website is the most similar to my project, but I wanted to see what features I could borrow from the other two domains as well.
             </p>
             <table id="competitive-analysis-table">
@@ -114,12 +114,13 @@
                 </tr>
             </table>
             <p>
-                TODO: add features from class?
                 In my competitive analysis, I compared features that expedite and simplify the user experience. For example, I found that sites like CraftedNBA with a lot of cards on one page and no sort or
-                filter features was extremely overwhelming. However, it benefitted by having a visible list on the page, allowing me to track what I was adding to my "favorites" list as I used the app without needing
+                filter features was extremely overwhelming; these functions increase flexibility and efficiency of the user experience. However, it benefitted by having a visible list on the page, allowing me to track what I was adding to my "favorites" list as I used the app without needing
                 me to navigate to another page like with Spotify's Liked Songs or Abercrombie's Favorited feature. However, I found that Spotify and Abercrombie benefitted from having informative cards with information
-                that may be used to sort/filter the cards and help the user make a decision on what to add to the table. Finally, I think that having a clearly visible add to list button made
-                a big difference in expediting the user experience and reducing the scanning a user has to do to get the desired goal of adding the item to the list.
+                that may be used to sort/filter the cards and help the user make a decision on what to add to the table. I also think that having a clearly visible add to list button made
+                a big difference in expediting the user experience and reducing the scanning a user has to do to get the desired goal of adding the item to the list. Abercrombie does a great job of this using the heart as a metaphor
+                for the action of adding to favorites. Although this is an overloaded icon across the web and has probably shaped my mental model of what it does, it still has a clear connection to the action it is conveying. Finally, I compared the different 
+                ways that someone could remove an item from the list. Having multiple routes to remove an item offers the user flexibility and improves their usability.
             </p>
 
             <p>
@@ -128,17 +129,33 @@
             </p>
             
            <!-- TODO: add photos of comparative analysis -->
+           <hr class="list-divider">
+            <div class="photo">
+                <img src="images/spotify.png" alt="spotify interface"/>
+                <h2>Spotify</h2>
+                <p>Spotify offers informative cards that can be displayed in multiple ways. However, you cannot currently see
+                    your list of "Liked Songs" from outside of the playlist, and the way to add songs to this list is not immediately clear (need to right click or hover to reveal "Add to Liked Songs").
+                </p>
+            </div>
             <hr class="list-divider">
             <div class="photo">
-                <img src="images/interfaceA.png" alt="original interface A"/>
-                <h2>Original Interface</h2>   
+                <img src="images/craftedNBA.png" alt="crafted NBA interface"/>
+                <h2>CraftedNBA</h2>
+                <p>CraftedNBA has a very minimal interface where the list and its aggregation system are placed front and center. However, it has no sorting 
+                    or filtering capability beyond its search functionality. Additionally, the cards give no information about the player you are picking beyond their "salary".
+                </p>
+            </div>
+            <hr class="list-divider">
+            <div class="photo">
+                <img src="images/abercrombie.png" alt="abercrombie interface"/>
+                <h2>Abercrombie</h2> 
+                <p>Abercrombie is an online marketplace that offers a lot of customizability to your search with filters based on type of clothing and ascending and descending sort functionality.
+                    Additionally, the button to add something to your favorites is clearly visible on the card. Like Spotify however, you must route to another page to 
+                    see your favorites.
+                </p>  
             </div>
             
-            <hr class="list-divider">
-            <div class="photo">
-                <img src="images/interfaceB.png" alt="redesigned interface B"/>
-                <h2>Redesigned Interface</h2>
-            </div>
+            
         </div>
         <hr class="section-divider" class="section">
         <!-- Development -->
@@ -153,7 +170,27 @@
                 have the option to do that.
             </p>
             <p>Here are few photos of my webapp in action!</p>
-            <!-- TODO: add photos -->
+            <hr class="list-divider">
+            <div class="photo">
+                <img src="images/song-list.png" alt="song list with members"/>
+                <h2>Song and list of members</h2>
+                <p>The aggregate list is clearly visible at the top of the application. Each member can be removed easily and the whole
+                    list can be cleared with one button click.
+                </p>
+            </div>
+            <hr class="list-divider">
+            <div class="photo">
+                <img src="images/cards.png" alt="member cards"/>
+                <h2>Member cards</h2>
+                <p>Each card displays important sorting and filtering information like class year, gen, name, and songs they know. This offers 
+                    an alternate route to remove people from the song if the user does not want to scroll to the top of the screen again.</p>
+            </div>
+            <hr class="list-divider">
+            <div class="photo">
+                <img src="images/sort-filter.png" alt="sort and filter functionality"/>
+                <h2>Possible sorting and filter options</h2>
+                <p>Users are able to sort by name, gen and graduation year in ascending and descending order. Additionally, they can filter based on gen and songs known.</p>
+            </div>
             <img>
             <img>
 
@@ -162,6 +199,7 @@
         <div id="deployment" class="section">
             <h1 class="section-header">Deployment</h1>
             <p>After developing my React application, I used Vercel to deploy it publicly.</p>
+            <img src="images/deployment.png">
         </div>
         <hr class="section-divider" class="section">
         <!-- Conclude -->
